@@ -1,0 +1,89 @@
+/*-----BODY-----*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+}
+/*-----LINKS-----*/
+
+a {
+    text-decoration: none;
+}
+/*-----LIST-STYLE-----*/
+
+.header-nav-list,
+.benefits-list,
+.social-list {
+  list-style: none;
+}
+/*-----VISUALLY-HIDDEN-----*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    width: 1160px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*-----LOGO-----*/
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  z-index: 1;
+}
+
+/*-----HEADER-----*/
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-top: -55px;
+  padding-bottom: 16px;
+}
+
+/*-----INTRO-----*/
+
+.intro {
+  width: 100%;
+  margin: auto;
+}
+
+.intro-text {
+  margin-top: -50px;
+  text-align: center;
+}
+
+.intro-img {
+  width: 100%;
+}
+
+.intro-mask-img {
+  bottom: 263px;
+
+  width: 100%;
+  height: 55px;
+}
+
+/*-----MAPS-----*/
+
+.map {
+  width: 100%;
+  height: 475px;
+}
