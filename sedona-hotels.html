@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Гостиницы Седоны</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -11,7 +12,7 @@
     <h1 class="visually-hidden">Гостиницы городка Седона</h1>
       <div class="logo">
         <a class="logo-link" href="index.html">
-          <img src="img/sedona_logo.png" alt="Логотип Sedona">
+          <img src="img/sedona_logo.png" alt="Логотип Sedona" width="138" height="70">
         </a>
       </div>
       <nav class="header-nav">
@@ -26,16 +27,17 @@
           <a class="header-link" href="#">Карта штата</a>
         </li>
         <li class="header-nav-item">
-          <a class="header-link-current" href="hotels.html">Гостиницы</a>
+          <a class="header-link header-link-current" href="hotels.html">Гостиницы</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="container">
+    <section class="search-form">
     <h2 class="visually-hidden">Форма поиска гостиниц</h2>
     <form class="hotel-range-form">
       <div class="fieldsets-wrapper">
-      <fieldset>
+      <fieldset class="fieldset fieldset-infrastructure">
         <legend>Инфраструктура:</legend>
         <ul class="range-list">
           <li>
@@ -55,7 +57,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset fieldset-type">
         <legend>Тип жилья:</legend>
         <ul class="range-list">
           <li>
@@ -76,7 +78,7 @@
         </ul>
       </fieldset>
     </div>
-    <fieldset>
+    <fieldset class="fieldset fieldset-price">
       <legend>Стоимость в сутки (P):</legend>
       <div class="price-controls">
         <div class="price-min">От 0</div>
@@ -86,10 +88,13 @@
         <div class="scale">
           <div class="bar"></div>
         </div>
+        <div class="range-toggle range-min"></div>
+        <div class="range-toggle range-max"></div>
       </div>
       <button type="submit" class="button form-button">Показать:</button>
     </fieldset>
     </form>
+  </section>
     <section class="results">
       <div class="results-wrapper">
       <h3>Найдено: 3</h3>
@@ -121,7 +126,7 @@
       <h3 class="visually-hidden">Список найденных гостиниц</h3>
       <section class="hotel-item">
         <div class="item-info">
-          <img src="img/hotelpicture1.jpg" alt="Фото Amara Resort and Spa">
+          <img src="img/hotelpicture1.jpg" alt="Фото Amara Resort and Spa" width="135" height="90">
           <div class="hotel-info">
             <span class="hotel-name">Amara Resort & Spa</span>
             <div class="type-price">
@@ -138,7 +143,7 @@
       </section>
       <section class="hotel-item">
         <div class="item-info">
-          <img src="img/hotelpicture2.jpg" alt="Фото Desert Quail inn">
+          <img src="img/hotelpicture2.jpg" alt="Фото Desert Quail inn" width="135" height="90">
           <div class="hotel-info">
             <span class="hotel-name">Desert Quail inn</span>
             <div class="type-price">
@@ -155,7 +160,7 @@
       </section>
       <section class="hotel-item">
         <div class="item-info">
-          <img src="img/hotelpicture3.jpg" alt="Фото Villas at Poco Diablo">
+          <img src="img/hotelpicture3.jpg" alt="Фото Villas at Poco Diablo" width="135" height="90">
           <div class="hotel-info">
             <span class="hotel-name">Villas at Poco Diablo</span>
             <div class="type-price">

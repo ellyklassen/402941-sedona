@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     min-width: 1200px;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 /*-----LINKS-----*/
 
@@ -15,7 +16,8 @@ a {
 
 .header-nav-list,
 .benefits-list,
-.social-list {
+.social-list,
+.range-list {
   list-style: none;
 }
 /*-----VISUALLY-HIDDEN-----*/
@@ -58,6 +60,14 @@ a {
   padding-bottom: 16px;
 }
 
+.header-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
 /*-----INTRO-----*/
 
 .intro {
@@ -81,6 +91,76 @@ a {
   height: 55px;
 }
 
+/*-----SEARCH-FORM-----*/
+
+.search-form {
+  background-image: url("../img/sedona-background.jpg");
+  height: 217px;
+}
+
+.hotel-range-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fieldsets-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 533px;
+}
+
+.fieldset {
+  border: 0px;
+  margin-top: 30px;
+}
+
+.fieldset-price {
+  width: 328px;
+}
+
+.range-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 32px;
+  border: 2px solid #ffffff;
+}
+
+.price-min {
+  width: 159px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.price-max {
+  width: 155px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-max::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+
+  width: 2px;
+  height: 22px;
+  background-color: #ffffff;
+}
 /*-----MAPS-----*/
 
 .map {
