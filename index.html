@@ -31,18 +31,20 @@
     </header>
   </div>
     <main>
-        <h1 class="visually-hidden">Sedona</h1>
         <div class="intro">
+          <h1 class="visually-hidden">Sedona</h1>
           <div class="intro-img">
              <img src="img/welcome-intro.png" alt="Фото городка Седона" class="intro-img">
           </div>
-        <div class="intro-text">
-            <span class="strong">Седона - небольшой городок в Аризоне,
-              заслуживающий большего!</span>
-              <p>Рассмотрим 5 причин , по которым Седона круче, чем Гранд каньон!</p>
-        </div>
+          <div class="intro-mask"></div>
+          <section class="promo">
+              <span class="strong">Седона - небольшой городок в Аризоне,
+                заслуживающий большего!</span>
+                <p>Рассмотрим 5 причин , по которым Седона круче, чем Гранд каньон!</p>
+          </section>
         </div>
        <div class="container">
+
          <section class="reason">
            <div class="reason-info">
              <h2 class="reason-title">Настоящий городок</h2>
@@ -138,32 +140,30 @@
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
       <div class="search-date">
         <label for="date-in">Дата заезда:</label>
-        <input id="date-in" type="text" value="24 апреля 2017">
+        <input class="popup-input" id="date-in" type="text" value="24 апреля 2017">
         <button class="calendar-btn">
           <span class="visually-hidden">Календарь</span>
         </button>
       </div>
       <div class="search-date">
         <label for="date-out">Дата выезда:</label>
-        <div class="calendar-wrapper">
-        <input id="date-out" type="text" value="4 июля 2017">
+        <input class="popup-input" id="date-out" type="text" value="4 июля 2017">
         <button class="calendar-btn">
           <span class="visually-hidden">Календарь</span>
         </button>
       </div>
-      </div>
       <div class="search-people">
         <div class="search-adults">
-          <label for="adults">Взрослые:</label>
-          <button class="search-minus">Minus</button>
-          <input type="text" name="adults" value="2">
-          <button class="search-plus">Plus</button>
+          <label for="adults" class="adults-label">Взрослые:</label>
+          <button class="search-minus"><span class="visually-hidden">Minus</span></button>
+          <input class="input-people" type="text" name="adults" value="2">
+          <button class="search-plus"><span class="visually-hidden">Plus</span></button>
         </div>
         <div class="search-kids">
-          <label for="kids">Дети:</label>
-          <button class="search-minus">Minus</button>
-          <input type="text" name="kids" value="0">
-          <button class="search-plus">Plus</button>
+          <label for="kids" class="kids-label">Дети:</label>
+          <button class="search-minus-kids"><span class="visually-hidden">Minus</span></button>
+          <input class="input-people" type="text" name="kids" value="0">
+          <button class="search-plus"><span class="visually-hidden">Plus</span></button>
         </div>
       </div>
       <button class="button search-hotel-btn">Найти</button>
