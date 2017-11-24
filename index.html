@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -34,22 +35,23 @@
         <div class="intro">
           <h1 class="visually-hidden">Sedona</h1>
           <div class="intro-img">
-             <img src="img/welcome-intro.png" alt="Фото городка Седона" class="intro-img">
+             <img src="img/welcome-intro.png" alt="Фото городка Седона" class="intro-img" width="1200" height="700">
           </div>
           <div class="intro-mask"></div>
           <section class="promo">
               <span class="strong">Седона - небольшой городок в Аризоне,
                 заслуживающий большего!</span>
-                <p>Рассмотрим 5 причин , по которым Седона круче, чем Гранд каньон!</p>
+                <p class="promo-text">Рассмотрим 5 причин , по которым Седона круче, чем Гранд каньон!</p>
           </section>
         </div>
        <div class="container">
 
          <section class="reason">
            <div class="reason-info">
-             <h2 class="reason-title">Настоящий городок</h2>
-             <span>-№1-</span>
-             <p>Седона - не аттракццион для туристов,
+             <h2 class="visually-hidden">Так почему же Седона лучше?</h2>
+             <h3 class="reason-title">Настоящий городок</h3>
+             <span class="reason-number">-№1-</span>
+             <p class="reason-text">Седона - не аттракццион для туристов,
               там течет своя жизнь</p>
            </div>
            <img src="img/reason1.jpg" alt="Седона - настоящий городок">
@@ -58,40 +60,40 @@
            <ul class="benefits-list">
              <li class="benefit-item">
                <h3 class="benefit-title">Жилье</h3>
-               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+               <p class="reason-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
              </li>
              <li class="benefit-item">
                <h3 class="benefit-title">Еда</h3>
-               <p>Всегда заказывайте фирменный бурегр, вы не разочаруетесь!</p>
+               <p class="reason-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
              </li>
              <li class="benefit-item">
                <h3 class="benefit-title">Сувениры</h3>
-               <p>Не только китайского, но и местного производства!</p>
+               <p class="reason-text">Не только китайского, но и местного производства!</p>
              </li>
            </ul>
          </section>
          <section class="reason">
            <img src="img/reason2.jpg" alt="Мост дьявола">
            <div class="reason-info">
-             <h2 class="reason-title">Там есть мост дьявола</h2>
-             <span>-№2-</span>
-             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+             <h3 class="reason-title">Там есть мост дьявола</h3>
+             <span class="reason-number">-№2-</span>
+             <p class="reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
            </div>
          </section>
-         <section class="reason">
+         <section class="reason reason-grey">
            <div class="reason-item">
-             <h2>Небольшая площадь</h2>
-             <span>-№3-</span>
+             <h3>Небольшая площадь</h3>
+             <span class="reason-number">-№3-</span>
              <p class="reason-text">Все достопричетельности находятся очень близко</p>
            </div>
            <div class="reason-item">
-             <h2>Красивая дорога</h2>
-             <span>-№4-</span>
+             <h3>Красивая дорога</h3>
+             <span class="reason-number">-№4-</span>
              <p class="reason-text">Ехать в Седону из Лас - Вегаса совсем не скучно!</p>
            </div>
            <div class="reason-item">
-             <h2>Мало туристов</h2>
-             <span>-№5-</span>
+             <h3>Мало туристов</h3>
+             <span class="reason-number">-№5-</span>
              <p class="reason-text">Большинство едет в Гранд каньон и толпится там</p>
            </div>
          </section>
@@ -105,6 +107,39 @@
            </div>
            <button class="button search-btn">Поиск гостиницы в Седоне</button>
          </div>
+         <section class="popup">
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="search-date">
+              <label for="date-in" class="label">Дата заезда:</label>
+              <input class="popup-input" id="date-in" type="text" value="24 апреля 2017">
+              <button class="calendar-btn">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+            </div>
+            <div class="search-date">
+              <label for="date-out" class="label">Дата выезда:</label>
+              <input class="popup-input" id="date-out" type="text" value="4 июля 2017">
+              <button class="calendar-btn">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+            </div>
+            <div class="search-people">
+              <div class="search-adults">
+                <label for="adults" class="adults-label label">Взрослые:</label>
+                <button class="search-minus"><span class="visually-hidden">Minus</span></button>
+                <input class="input-people" type="text" name="adults" value="2">
+                <button class="search-plus"><span class="visually-hidden">Plus</span></button>
+              </div>
+              <div class="search-kids">
+                <label for="kids" class="kids-label label">Дети:</label>
+                <button class="search-minus-kids"><span class="visually-hidden">Minus</span></button>
+                <input class="input-people" type="text" name="kids" value="0">
+                <button class="search-plus"><span class="visually-hidden">Plus</span></button>
+              </div>
+            </div>
+            <button class="button search-hotel-btn">Найти</button>
+          </form>
+        </section>
          </section>
        </div>
     </main>
@@ -135,40 +170,6 @@
         </a>
       </div>
     </footer>
-
-   <section class="popup">
-    <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
-      <div class="search-date">
-        <label for="date-in">Дата заезда:</label>
-        <input class="popup-input" id="date-in" type="text" value="24 апреля 2017">
-        <button class="calendar-btn">
-          <span class="visually-hidden">Календарь</span>
-        </button>
-      </div>
-      <div class="search-date">
-        <label for="date-out">Дата выезда:</label>
-        <input class="popup-input" id="date-out" type="text" value="4 июля 2017">
-        <button class="calendar-btn">
-          <span class="visually-hidden">Календарь</span>
-        </button>
-      </div>
-      <div class="search-people">
-        <div class="search-adults">
-          <label for="adults" class="adults-label">Взрослые:</label>
-          <button class="search-minus"><span class="visually-hidden">Minus</span></button>
-          <input class="input-people" type="text" name="adults" value="2">
-          <button class="search-plus"><span class="visually-hidden">Plus</span></button>
-        </div>
-        <div class="search-kids">
-          <label for="kids" class="kids-label">Дети:</label>
-          <button class="search-minus-kids"><span class="visually-hidden">Minus</span></button>
-          <input class="input-people" type="text" name="kids" value="0">
-          <button class="search-plus"><span class="visually-hidden">Plus</span></button>
-        </div>
-      </div>
-      <button class="button search-hotel-btn">Найти</button>
-    </form>
-  </section>
   </div>
   </body>
 </html>
